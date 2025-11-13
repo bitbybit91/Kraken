@@ -1,0 +1,15 @@
+{
+  "hidden_services": [
+    {
+      "name": "example_service",
+      "url": "http://example.onion",
+      "type": "wordpress",
+      "port": 80,
+      "enabled": true,
+      "wordlists": {
+        "users": "wordlists/users.txt",
+        "passwords": "wordlists/passwords.txt"
+      }
+    }
+  ]
+}

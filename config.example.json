@@ -1,0 +1,24 @@
+{
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN_HERE",
+    "chat_id": "YOUR_CHAT_ID_HERE",
+    "enabled": false,
+    "comment": "Get bot token from @BotFather and chat ID from @userinfobot"
+  },
+  "tor": {
+    "socks_proxy": "socks5h://127.0.0.1:9050",
+    "enabled": true,
+    "comment": "Enable Tor support for .onion domains"
+  },
+  "targets": {
+    "hidden_services": [],
+    "comment": "Configure targets in hidden_services.json"
+  },
+  "settings": {
+    "threads": 10,
+    "timeout": 30,
+    "reports_dir": "reports",
+    "auto_mode": true,
+    "comment": "threads: concurrent connections, timeout: seconds per attempt"
+  }
+}

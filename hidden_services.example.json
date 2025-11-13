@@ -1,0 +1,41 @@
+{
+  "hidden_services": [
+    {
+      "name": "example_wordpress_onion",
+      "url": "http://example123abc.onion",
+      "type": "wordpress",
+      "port": 80,
+      "enabled": false,
+      "comment": "WordPress site on Tor hidden service",
+      "wordlists": {
+        "users": "wordlists/users.txt",
+        "passwords": "wordlists/passwords.txt"
+      }
+    },
+    {
+      "name": "example_ssh_onion",
+      "url": "http://example456def.onion",
+      "type": "ssh",
+      "port": 22,
+      "enabled": false,
+      "comment": "SSH server on Tor hidden service",
+      "wordlists": {
+        "users": "wordlists/users.txt",
+        "passwords": "wordlists/passwords.txt"
+      }
+    },
+    {
+      "name": "example_clearnet_wordpress",
+      "url": "http://example.com",
+      "type": "wordpress",
+      "port": 80,
+      "enabled": false,
+      "comment": "WordPress site on clearnet (Tor will still be used if enabled)",
+      "wordlists": {
+        "users": "wordlists/users.txt",
+        "passwords": "wordlists/passwords.txt"
+      }
+    }
+  ],
+  "_comment": "Set enabled to true to activate a target. Remove disabled targets or keep for reference."
+}
