@@ -81,6 +81,8 @@ class SSHBruteForceAuto:
     def _attempt_login(self, username, password):
         """Attempt SSH login with credentials"""
         client = paramiko.SSHClient()
+        # Note: AutoAddPolicy is intentional for automated scanning of unknown hosts
+        # This is necessary for penetration testing tools. See SECURITY.md
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         
         try:
@@ -109,6 +111,9 @@ class SSHBruteForceAuto:
                 allow_agent=False
             )
             
+            # Note: Logging passwords in clear text is intentional for credential discovery
+            # This is expected behavior for penetration testing tools
+            # See SECURITY.md for mitigation strategies
             logging.info(f"✓ SUCCESS: {username}:{password}")
             client.close()
             return True
