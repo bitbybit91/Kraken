@@ -19,6 +19,18 @@
 ## About The Project
 <b>Kraken</b> is a powerful, Python-based tool designed to centralize and streamline various brute-forcing tasks. Kraken provides a suite of tools for cybersecurity professionals to efficiently perform brute-force attacks across a range of protocols and services.
 
+### 🆕 Hidden Services Edition
+
+Kraken now includes **automated scanning capabilities** specifically designed for Ubuntu VPS deployments targeting hidden services:
+
+- 🧅 **Tor Hidden Service Support** - Full .onion domain support via SOCKS5 proxy
+- 📱 **Telegram Notifications** - Real-time alerts when credentials are discovered
+- ⚙️ **Automated Execution** - Systemd service runs scans every 2 hours
+- 📊 **Structured Reporting** - JSON-formatted results with timestamps
+- 🔒 **Production Ready** - Error handling, logging, and security hardening
+
+**[→ Quick Start Guide for Hidden Services](QUICKSTART.md)** | **[→ Full Documentation](README_HIDDEN_SERVICES.md)**
+
 ## ⚠️  WARNING: LEGAL DISCLAIMER
 
 This tool is intended for educational purposes only. The author is not responsible for any illegal use of this tool. Users aresolely responsible 
@@ -45,7 +57,9 @@ for their actions.
 
 ## ⚙️ Installation
 
-To install Kraken, follow these steps:
+### Interactive Mode (Original)
+
+To install Kraken for interactive use:
 
 ```bash
 git clone https://github.com/jasonxtn/kraken.git
@@ -58,6 +72,25 @@ To launch Kraken:
 ```bash
 python kraken.py
 ```
+
+### Automated Mode (Hidden Services - Ubuntu VPS)
+
+For automated scanning with hidden service support:
+
+```bash
+git clone https://github.com/jasonxtn/kraken.git
+cd Kraken
+sudo bash install.sh
+```
+
+This will:
+- Install dependencies (Python 3, Tor)
+- Configure Tor for SOCKS proxy
+- Install Kraken to `/opt/kraken`
+- Setup systemd service to run every 2 hours
+- Configure Telegram notifications (optional)
+
+See **[QUICKSTART.md](QUICKSTART.md)** for detailed setup instructions.
 
 ---
 
