@@ -86,6 +86,8 @@ Edit `hidden_services.json`:
 - `wordpress` - WordPress sites
 - `ssh` - SSH servers
 
+**📖 For detailed instructions on adding different service types (SSH, FTP, etc.), see [ADDING_SERVICES.md](ADDING_SERVICES.md)**
+
 ### 2. Configure Telegram Notifications (Optional)
 
 Edit `config.json`:

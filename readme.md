@@ -29,7 +29,7 @@ Kraken now includes **automated scanning capabilities** specifically designed fo
 - 📊 **Structured Reporting** - JSON-formatted results with timestamps
 - 🔒 **Production Ready** - Error handling, logging, and security hardening
 
-**[→ Quick Start Guide for Hidden Services](QUICKSTART.md)** | **[→ Full Documentation](README_HIDDEN_SERVICES.md)**
+**[→ Quick Start Guide](QUICKSTART.md)** | **[→ Full Documentation](README_HIDDEN_SERVICES.md)** | **[→ Adding Services Guide](ADDING_SERVICES.md)**
 
 ## ⚠️  WARNING: LEGAL DISCLAIMER
 

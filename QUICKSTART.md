@@ -58,6 +58,8 @@ Add your targets:
 
 **Important**: Set `"enabled": true` for targets you want to scan!
 
+**📖 Need help adding SSH, FTP, or other services? See [ADDING_SERVICES.md](ADDING_SERVICES.md)**
+
 ### 3. Configure Telegram (Optional)
 
 If you want Telegram notifications:
