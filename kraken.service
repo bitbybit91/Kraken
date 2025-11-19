@@ -1,0 +1,22 @@
+[Unit]
+Description=Kraken Automated Hidden Service Scanner
+After=network.target tor.service
+Wants=tor.service
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/kraken
+ExecStart=/usr/bin/python3 /opt/kraken/kraken_auto.py
+StandardOutput=append:/var/log/kraken/kraken.log
+StandardError=append:/var/log/kraken/kraken_error.log
+Restart=on-failure
+RestartSec=30
+
+# Security hardening
+PrivateTmp=yes
+NoNewPrivileges=true
+ReadWritePaths=/opt/kraken/reports /var/log/kraken
+
+[Install]
+WantedBy=multi-user.target

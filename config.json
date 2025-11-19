@@ -1,0 +1,20 @@
+{
+  "telegram": {
+    "bot_token": "",
+    "chat_id": "",
+    "enabled": false
+  },
+  "tor": {
+    "socks_proxy": "socks5h://127.0.0.1:9050",
+    "enabled": true
+  },
+  "targets": {
+    "hidden_services": []
+  },
+  "settings": {
+    "threads": 10,
+    "timeout": 30,
+    "reports_dir": "reports",
+    "auto_mode": true
+  }
+}

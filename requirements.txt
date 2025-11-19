@@ -9,3 +9,4 @@ pywifi
 pyrad
 rich
 ldap3
+PySocks
